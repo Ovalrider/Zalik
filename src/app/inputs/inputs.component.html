@@ -1,0 +1,16 @@
+
+  <form [formGroup]="my_form" (ngSubmit)="onSubmit()">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Введіть N</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="text" label="N:" formControlName="N"></ion-input>
+        </ion-item>
+        <ion-button type="submit" expand="block" >
+          Відправити
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </form>

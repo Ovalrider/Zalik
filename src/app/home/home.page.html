@@ -1,0 +1,19 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+    <ion-title>Розробити сервіс для вирішення наступної задачі.<br> 
+      В одній країні використовуються грошові купюри номіналом в 1, 2, 4, 8, 16, 32 і 64. Дано натуральне число n. <br> 
+      Якою найменшою кількістю таких грошових знаків можна виплатити суму n <br> (вказати кількість кожної з використовуваних для виплати купюр)? Передбачається, що є досить велика кількість купюр всіх номіналів.
+      </ion-title>
+    <app-inputs (addGreedy)="add_Greedy($event)"></app-inputs>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Щоб виплатити суму {{shower.sum}} найменшою кількістю номіналів {{shower.noms}}, необхідно</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      {{shower.nom_count}}
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+    
+</ion-content>
